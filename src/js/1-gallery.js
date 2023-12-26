@@ -1,5 +1,8 @@
 'use strict';
 
+import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
+
 const images = [
   {
     preview:
@@ -79,10 +82,7 @@ const gallery = document.querySelector(".gallery");
 
 gallery.insertAdjacentHTML('beforeend', picString);
 
-
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
-
 const lightbox = new SimpleLightbox('.gallery a', {
-    captionsData: 'alt'
+  captionsData: 'alt',
+  captionDelay: 250
 });
