@@ -7,16 +7,15 @@ function handleSubmit(event) {
   
     if (email === "" || message === "") {
       alert('All form fields must be filled in');
-  }
-
-    const theFeedback = {
+    } else {
+      const theFeedback = {
         email: email,
         message: message
-    };
-
-  localStorage.setItem('feedback-form-state', JSON.stringify(theFeedback));
-  console.log(theFeedback);
-  feedbackForm.reset();
+      };
+        localStorage.setItem('feedback-form-state', JSON.stringify(theFeedback));
+        console.log(theFeedback);
+        feedbackForm.reset();
+    }
 }
 
 feedbackForm.addEventListener('input', function () {
