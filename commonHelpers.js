@@ -2,5 +2,5 @@ import"./assets/modulepreload-polyfill-ec808ebb.js";import{S as o}from"./assets/
   <a class="gallery-link" href="${p.original}">
     <img class="gallery-image" src="${p.preview}" alt="${p.description}" />
   </a>
-</li>`),t=a.join(" "),e=document.querySelector(".gallery");e.insertAdjacentHTML("beforeend",t);new o(".gallery a",{captionsData:"alt"});
+</li>`),t=a.join(" "),e=document.querySelector(".gallery");e.insertAdjacentHTML("beforeend",t);new o(".gallery a",{captionsData:"alt",captionDelay:250});
 //# sourceMappingURL=commonHelpers.js.map
